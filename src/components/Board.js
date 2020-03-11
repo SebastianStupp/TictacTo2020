@@ -39,7 +39,7 @@ export default function Board() {
     : "Following Player Wins:";
 
   const player = turn ? "X" : "O";
-  const status = calculateWinner
+  const status = calculateWinner(squares)
     ? `${nextPlayer} ${player}`
     : `${nextPlayer} ${playerWins}`;
 
